@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Double Pendulum Simulation</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div style="text-align: center;">
+	<input id="mass" type="number" placeholder="Mass (kg)" value="1">
+	<input id="large" type="number" placeholder="Length (cm)" value="60">
+	<input id="gravity" type="number" placeholder="Gravity (m/s^2)" value="9.81">
+	<button onclick="toggleDrawing()">Toggle</button>
+</div>
+<div style="display: flex; justify-content: space-around; align-items: center; flex-direction: column; width: 400px">
+	<canvas id="energyChart" width="400" height="400"></canvas>
+</div>
+<script src="sketch.js"></script>
+</body>
+</html>
